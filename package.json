@@ -1,0 +1,9 @@
+{
+    "name": "wheelless-fortune",
+    "version": "0.0.2",
+    "description": "Multiplayer phrase-guessing game",
+    "dependencies": {
+        "express": "^4.21.2",
+        "socket.io": "^4.8.1"
+    }
+}

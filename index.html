@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/wfstyles.css">
+        <title>Wheel-less Fortune</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column" class="left">
+                <div class="card">
+                    <div class="container">
+                      <h4><b>Player One</b></h4>
+                      <p id="p1MoneyTracker">$: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column" class="middle">
+                <div class="card">
+                    <div class="container">
+                        <h1>Wheel-less Fortune</h1>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                        <h2 id="wordBoard"></h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                        <p id="turnText">Player One's Turn!</p>
+                    </div>
+                </div>
+
+                <div class="card" class="right">
+                    <div class="container">
+                        <div id="roundOptions">
+                            <button id="spinButton">Spin the Nonexistent Wheel</button>
+                            <button id="vowelButton">Buy a Vowel</button>
+                            <button id="solveButton">Solve</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                        <div id="letterDisplay"></div>
+                        <div id="solveDisplay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                      <h4><b>Player Two</b></h4>
+                      <p id="p2MoneyTracker">$: 0</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <h3>Events</h1>
+                        <div class="logs" class="container">
+                            <p id="eventLog"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+        <footer>
+            <div class="footer">
+                <p>Author: Emma Jackson</p>
+                <p>2025</p>
+                <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a>
+            </div>     
+        </footer>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+        var socket = io();
+        </script> 
+        <script src="/client.js"></script>  
+    </body>
+</html>
